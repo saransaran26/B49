@@ -1,0 +1,19 @@
+compare two JSON has same property without order ?
+        var arr1 = {name:"saran",age:21}
+        var arr2 = {age:21,name:"saran"}
+
+
+        function compare(){
+          
+          if(Object.keys(arr1).length != Object.keys(arr2).length){
+            return false
+          }
+          for(var key in arr1){
+            if(!arr2.hasOwnProperty(key) || arr1[key] !== arr2[key]){
+              return false
+            }
+          }
+          return true
+        }
+        
+        console.log(compare())
