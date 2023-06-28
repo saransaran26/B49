@@ -1,4 +1,4 @@
-compare two JSON has same property without order ?
+1 . compare two JSON has same property without order ?
         var arr1 = {name:"saran",age:21}
         var arr2 = {age:21,name:"saran"}
 
@@ -17,3 +17,20 @@ compare two JSON has same property without order ?
         }
         
         console.log(compare())
+
+2 . Using API display all country flags?
+                var xhr = new XMLHttpRequest();
+        var method = 'GET';
+        var url = 'https://restcountries.com/v3.1/all';
+        xhr.open(method,url);
+        xhr.onload = function(){
+            if(xhr.status === 200){
+                var details = JSON.parse(xhr.responseText);
+                for(var i=0;i<details.length;i++){
+                    console.log(details[i].flag);
+                }
+            }
+            else{
+                console.log("request failed",xhr.status)
+            }
+        }
