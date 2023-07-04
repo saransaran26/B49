@@ -1,4 +1,28 @@
-Write a “person” class to hold all the details?
+1 . 
+class Movie{
+constructor(title,studo,rating){
+this.title = title
+this.studio = studio
+this.rating = rating
+}
+}
+var c1 = new Movie("Casino Royale","Eon Productions","PG13"
+
+2.
+var pi = 3.14
+class Circle{
+constructor(radius){
+this.radius = radius}
+getradius(){
+return pi * this.radius * this.radius
+}
+}
+var c1 = new Circle(20)
+console.log(c1.getradius())
+
+
+
+3 . Write a “person” class to hold all the details?
 class Person{
   constructor(name,age,gender){
     this.name = name;
