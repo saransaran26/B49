@@ -1,0 +1,12 @@
+Write a “person” class to hold all the details?
+class Person{
+  constructor(name,age,gender){
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
+}
+
+var c1 = new Person("saran",21,"male")
+console.log(c1.name)
+
